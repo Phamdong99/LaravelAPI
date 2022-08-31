@@ -34,6 +34,8 @@ class PostsTransformer extends TransformerAbstract
         return [
             'id' => $post->id,
             'user_id' => $post->user_id,
+            'votes'=> $post->votes,
+            'view_count'=>$post->view_count,
             'content' => $post->content
         ];
     }

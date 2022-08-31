@@ -23,3 +23,6 @@ Route::put('employees/{id}', [\App\Http\Controllers\EmployeeController::class, '
 Route::delete('employees/{id}', [\App\Http\Controllers\EmployeeController::class, 'delete']);
 
 Route::get('posts/{id?}', [\App\Http\Controllers\PostsController::class, 'getPost']);
+Route::post('posts', [\App\Http\Controllers\PostsController::class, 'create']);
+Route::put('posts/{id}', [\App\Http\Controllers\PostsController::class, 'update']);
+Route::delete('posts/{id}', [\App\Http\Controllers\PostsController::class, 'delete']);
